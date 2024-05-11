@@ -24,13 +24,21 @@
                         <form id="ticket">
                             <!-- KM -->
                             <div class="form mb-3">
-                                <label for="klm">How many km should you travel on the train?</label>
-                                <input type="number" class="form-control" id="travelKM" placeholder="Insert here">
+                                <label for="user-KM">How many km should you travel on the train?</label>
+                                <input type="number" class="form-control" id="travel-KM" placeholder="Insert here">
                             </div>
                             <!-- YEARS -->
                             <div class="form mb-3">
-                                <label for="klm" class="form-label">How old are you?</label>
-                                <input type="range" class="" min="10" max="105" step="1" id="user-years" value="10">
+                                <label for="age" class="form-label">How old are you? 
+                                    <span class="current-age">000</span></label>
+                                <input 
+                                type="range" 
+                                class="form-range" 
+                                min="10" 
+                                max="105" 
+                                step="1" 
+                                id="user-years" 
+                                value="10">
                             </div>
                             <button type="submit" class="btn btn-primary">Calculate</button>
                         </form>
