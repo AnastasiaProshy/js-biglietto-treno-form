@@ -11,28 +11,36 @@
 </head>
 
 <body>
-    
-    <main class="py-10">
+
+    <main class="py-5">
         <div class="container">
-            <div class="row">
+            <div class="row g-5">
                 <div class="col-12 text-center">
                     <h1>GET YOUR TICKET</h1>
-                    <form id="ticket">
-                        <div class="form">
-                            <label for="klm">How many km should you travel on the train?</label>
-                            <input type="" class="" id="" aria-describedby="">
-                        </div>
-                        <div class="form">
-                            <label for="klm">How old are you?</label>
-                            <input type="eta" class="" id="" aria-describedby="">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Calculate</button>
-                    </form>
+                </div>
+
+                <div class="col-7 mx-auto">
+                    <div class="">
+                        <form id="ticket">
+                            <!-- KM -->
+                            <div class="form mb-3">
+                                <label for="klm">How many km should you travel on the train?</label>
+                                <input type="number" class="form-control" id="travelKM" placeholder="Insert here">
+                            </div>
+                            <!-- YEARS -->
+                            <div class="form mb-3">
+                                <label for="klm" class="form-label">How old are you?</label>
+                                <input type="range" class="" min="10" max="105" step="1" id="user-years" value="10">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Calculate</button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
 
         </div>
-        
+
     </main>
 
     <!-- <p class="x">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, eum ducimus praesentium temporibus
