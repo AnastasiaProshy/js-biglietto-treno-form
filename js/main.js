@@ -24,21 +24,32 @@ console.log(currentAge);
 currentAge.innerText = userAge.value;
 
 //cambia il valore corrente di innerText
-userAge.addEventListener('change', function(){
+userAge.addEventListener('change', function () {
     currentAge.innerText = userAge.value;
 })
- 
 
 
 
 
 
-
-//Invio del Form
+//Invio del Form is other program
 formTicket.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    console.log('ho inviato il form');
+    const userKM = document.getElementById('travel-KM');
+    const userAge = document.getElementById('user-years');
+
+    console.log(userKM.value);
+    console.log(userAge.value);
+
+    //operazioni di calcolo
+
+
+    //risultato del calcolo
+    document.getElementById('Result').innerText = 'y';
+    document.getElementById('fruit-box').classList.remove('d-none');
+
+
 });
 
 
