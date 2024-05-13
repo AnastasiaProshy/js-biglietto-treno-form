@@ -9,8 +9,11 @@ const userKM = document.getElementById('travel-KM');
 console.log(userKM);
 
 // Range input con id: user-years
-const userAge = document.getElementById('user-years');
-console.log(userAge);
+const userAGE = document.getElementById('user-years');
+console.log(userAGE);
+
+//Element to display the result
+const displayResult = document.getElementById('Result');
 
 let finalResult;
 
@@ -18,8 +21,6 @@ let finalResult;
 formTicket.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const userKM = document.getElementById('travel-KM');
-    const userAGE = document.getElementById('user-years');
 
     const DefaultPrice = (userKM.value * 0.21).toFixed(2);
 
@@ -44,14 +45,14 @@ formTicket.addEventListener('submit', function (event) {
 
 
     //risultato del calcolo********************************************************************************************
-    document.getElementById('Result').innerText = finalResult;
+    displayResult.innerText = finalResult;
     document.getElementById('fruit-box').classList.remove('d-none');
 
 });
 
 //bottone reset
 document.getElementById('reset').addEventListener('click', function () {
-    document.getElementById('Result').innerText = ''; //svuota campo di testo
+    displayResult.innerText = ''; //svuota campo di testo
     document.getElementById('fruit-box').classList.add('d-none'); //elimina contenitore di resultato
     document.querySelector('.current-age').innerText = '';
 });

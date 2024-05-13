@@ -27,7 +27,7 @@
 
                             <!-- KM -->
                             <div class="form mb-4">
-                                <label for="user-KM" class="bi bi-person-check-fill"> How many km should you
+                                <label for="travel-KM" class="bi bi-person-check-fill"> How many km should you
                                     travel?</label>
                                 <input type="number" class="form-control" id="travel-KM" placeholder="Insert here">
                             </div>
@@ -42,28 +42,33 @@
 
                             <!-- TIPE OF TICKET -->
                             <div class="form mb-3">
-                                <label for="age" class="form-label bi bi-person-check-fill"> Select the appropriate
+                                <label for="user-years" class="form-label bi bi-person-check-fill"> Select the
+                                    appropriate
                                     ticket type
                                     <span class="current-age bi bi-suit-heart"> :</span></label>
 
-                                <select class="form-select" id="user-years" multiple
-                                    aria-label="Multiple select example">
+                                <select class="form-select" id="user-years">
 
-                                    <option value="1" class="bi bi-plus-circle-dotted">
-                                        Standard "Plain Jane Ticket"</option>
+                                    <option value="1">
+                                        <i class="bi bi-plus-circle-dotted"></i>Standard "Plain Jane Ticket"
+                                    </option>
 
-                                    <option value="2" class="bi bi-plus-circle-dotted">
-                                        Senior Discount 40% for Over 64 "Vintage Voyager"</option>
+                                    <option value="2">
+                                        <i class="bi bi-plus-circle-dotted"></i>Senior Discount 40% for Over 64 "Vintage
+                                        Voyager"
+                                    </option>
 
-                                    <option value="3" class="bi bi-plus-circle-dotted">
-                                        Youth Discount 20% for Under 19 "Teen Dream Ticket"</option>
+                                    <option value="3">
+                                        <i class="bi bi-plus-circle-dotted"></i> Youth Discount 20% for Under 19 "Teen
+                                        Dream Ticket"
+                                    </option>
                                 </select>
                             </div>
 
                             <!-- BUTTON -->
                             <div class="">
                                 <button type="submit" class="btn btn-primary">Calculate</button>
-                                <button type="button" class="btn btn-danger" id="reset">Reset</button>
+                                <button type="reset" class="btn btn-danger" id="reset">Reset</button>
                             </div>
 
                         </form>
